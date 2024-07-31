@@ -1,0 +1,31 @@
+Type                                  Module             Label          Process         Full Name
+-------------------------------------------------------------------------------------------------
+FEDRawDataCollection                  "source"           ""             "MyTree"        FEDRawDataCollection_source__MyTree
+HcalDataFrameContainer<QIE10DataFrame>    "hcalDigis"        ""             "MyTree"        QIE10DataFrameHcalDataFrameContainer_hcalDigis__MyTree
+HcalDataFrameContainer<QIE10DataFrame>    "hcalDigis"        "LASERMON"     "MyTree"        QIE10DataFrameHcalDataFrameContainer_hcalDigis_LASERMON_MyTree
+HcalDataFrameContainer<QIE10DataFrame>    "hcalDigis"        "UNUSED10"     "MyTree"        QIE10DataFrameHcalDataFrameContainer_hcalDigis_UNUSED10_MyTree
+HcalDataFrameContainer<QIE10DataFrame>    "hcalDigis"        "UNUSED6"      "MyTree"        QIE10DataFrameHcalDataFrameContainer_hcalDigis_UNUSED6_MyTree
+HcalDataFrameContainer<QIE10DataFrame>    "hcalDigis"        "ZDC"          "MyTree"        QIE10DataFrameHcalDataFrameContainer_hcalDigis_ZDC_MyTree
+HcalDataFrameContainer<QIE11DataFrame>    "hcalDigis"        ""             "MyTree"        QIE11DataFrameHcalDataFrameContainer_hcalDigis__MyTree
+HcalUMNioDigi                         "hcalDigis"        ""             "MyTree"        HcalUMNioDigi_hcalDigis__MyTree
+HcalUnpackerReport                    "hcalDigis"        ""             "MyTree"        HcalUnpackerReport_hcalDigis__MyTree
+edm::SortedCollection<HBHEDataFrame,edm::StrictWeakOrdering<HBHEDataFrame> >    "hcalDigis"        ""             "MyTree"        HBHEDataFramesSorted_hcalDigis__MyTree
+edm::SortedCollection<HFDataFrame,edm::StrictWeakOrdering<HFDataFrame> >    "hcalDigis"        ""             "MyTree"        HFDataFramesSorted_hcalDigis__MyTree
+edm::SortedCollection<HODataFrame,edm::StrictWeakOrdering<HODataFrame> >    "hcalDigis"        ""             "MyTree"        HODataFramesSorted_hcalDigis__MyTree
+edm::SortedCollection<HOTriggerPrimitiveDigi,edm::StrictWeakOrdering<HOTriggerPrimitiveDigi> >    "hcalDigis"        ""             "MyTree"        HOTriggerPrimitiveDigisSorted_hcalDigis__MyTree
+edm::SortedCollection<HcalCalibDataFrame,edm::StrictWeakOrdering<HcalCalibDataFrame> >    "hcalDigis"        ""             "MyTree"        HcalCalibDataFramesSorted_hcalDigis__MyTree
+edm::SortedCollection<HcalTTPDigi,edm::StrictWeakOrdering<HcalTTPDigi> >    "hcalDigis"        ""             "MyTree"        HcalTTPDigisSorted_hcalDigis__MyTree
+edm::SortedCollection<HcalTriggerPrimitiveDigi,edm::StrictWeakOrdering<HcalTriggerPrimitiveDigi> >    "hcalDigis"        ""             "MyTree"        HcalTriggerPrimitiveDigisSorted_hcalDigis__MyTree
+edm::SortedCollection<ZDCDataFrame,edm::StrictWeakOrdering<ZDCDataFrame> >    "hcalDigis"        ""             "MyTree"        ZDCDataFramesSorted_hcalDigis__MyTree
+edm::TriggerResults                   "TriggerResults"   ""             "MyTree"        edmTriggerResults_TriggerResults__MyTree
+vector<double>                        "zdcdigi"          "ADC"          "MyTree"        doubles_zdcdigi_ADC_MyTree
+vector<double>                        "zdcdigi"          "CapId"        "MyTree"        doubles_zdcdigi_CapId_MyTree
+vector<double>                        "zdcdigi"          "DetId"        "MyTree"        doubles_zdcdigi_DetId_MyTree
+vector<double>                        "zdcdigi"          "chargeHigh"   "MyTree"        doubles_zdcdigi_chargeHigh_MyTree
+vector<double>                        "zdcdigi"          "chargeLow"    "MyTree"        doubles_zdcdigi_chargeLow_MyTree
+vector<double>                        "zdcdigi"          "chargeSum"    "MyTree"        doubles_zdcdigi_chargeSum_MyTree
+vector<double>                        "zdcdigi"          "nominalfC"    "MyTree"        doubles_zdcdigi_nominalfC_MyTree
+vector<double>                        "zdcdigi"          "overflow"     "MyTree"        doubles_zdcdigi_overflow_MyTree
+vector<double>                        "zdcdigi"          "ratio5o4"     "MyTree"        doubles_zdcdigi_ratio5o4_MyTree
+vector<double>                        "zdcdigi"          "ratio6o5"     "MyTree"        doubles_zdcdigi_ratio6o5_MyTree
+vector<double>                        "zdcdigi"          "regularfC"    "MyTree"        doubles_zdcdigi_regularfC_MyTree
