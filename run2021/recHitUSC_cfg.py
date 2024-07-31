@@ -6,7 +6,7 @@ import os
 import sys
 
 #runNumber = '345574'
-runNumber = '373100'
+runNumber = '383861'
 if len(sys.argv) > 2:
 	runNumber = sys.argv[2]
 
@@ -20,10 +20,10 @@ rawTag    = cms.InputTag('source')
 #GT        = "130X_dataRun3_Prompt_v3"
 
 #infile = 'file: /afs/cern.ch/user/s/sarteaga/for_zdc_work_P5files/CMSSW_10_6_4/src/OfflineProducer/QWNtrkOfflineProducer-ZDC2022/run2021/69a0867a-b1c4-44e3-b1c7-b2a43f5fd442.root'
-infile    = 'file:/eos/cms/store/group/dpg_hcal/comm_hcal/USC/run'+runNumber+'/USC_'+runNumber+'.root'
+#infile    = 'file:/eos/cms/store/group/dpg_hcal/comm_hcal/USC/run'+runNumber+'/USC_'+runNumber+'.root'
 #Saray
 #infile    = 'file:/eos/cms/store/group/dpg_hcal/comm_hcal/ZDC/USC/run'+runNumber+'/USC_'+runNumber+'.root'
-
+infile     = 'file:/afs/cern.ch/user/s/stepobr/public/ZDC2024/USC_'+runNumber +'.root'
 
 #-----------------------------------
 # Standard CMSSW Imports/Definitions
@@ -45,12 +45,12 @@ process.es_ascii = cms.ESSource(
             object = cms.string('ElectronicsMap'),
 	    #file = cms.FileInPath("OfflineProducer/QWNtrkOfflineProducer-ZDC2022/run2021/emap_tunel_both_numer.txt")
             #file = cms.FileInPath("OfflineProducer/QWNtrkOfflineProducer-ZDC2022/run2021/emap_all_tunel.txt")
-	   #file = cms.FileInPath("OfflineProducer/QWNtrkOfflineProducer-ZDC2022/run2021/zdc_emap_and_TPchannels.txt") # basically final emap
-	    file = cms.FileInPath("OfflineProducer/QWNtrkOfflineProducer-ZDC2022/run2021/emap_USC_1_Intev.txt") #emap sep9 after re-arranging fibers in USC 
+	  # file = cms.FileInPath("OfflineProducer/QWNtrkOfflineProducer-ZDC2022/run2021/zdc_emap_and_TPchannels.txt") # basically final emap
+	   # file = cms.FileInPath("OfflineProducer/QWNtrkOfflineProducer-ZDC2022/run2021/emap_USC_1_Intev.txt") #emap sep9 after re-arranging fibers in USC 
 	    # file = cms.FileInPath("OfflineProducer/QWNtrkOfflineProducer-ZDC2022/run2021/ZDC_emap_2023.txt")
 	     #file = cms.FileInPath("OfflineProducer/QWNtrkOfflineProducer-ZDC2022/run2021/emap_sep_13.txt")
 	    #file = cms.FileInPath("OfflineProducer/QWNtrkOfflineProducer-ZDC2022/run2021/ZDC_intervention_2_emap.txt")	   
-            #  file = cms.FileInPath("OfflineProducer/QWNtrkOfflineProducer-ZDC2022/run2021/emap_temporal_42channels_tunel.txt")
+             file = cms.FileInPath("OfflineProducer/QWNtrkOfflineProducer-ZDC2022/run2021/emap_2023_newZDC_v3.txt") #emap that ZDCsoftware team is using (final)
             #file = cms.FileInPath("OfflineProducer/QWNtrkOfflineProducer-ZDC2022/run2021/emap_2023_newZDC_v4.txt")
            #file = cms.FileInPath("OfflineProducer/QWNtrkOfflineProducer-ZDC2022/run2021/ZDC_emap_proposal.txt") #emap before tunnel intervention
 		)
