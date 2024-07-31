@@ -5,6 +5,7 @@
    $   cd CMSSW_10_6_4/src
    
 2.- create a folder OfflineProducer  and clone this repository
+
    $   mkdir OfflineProducer
    
    $   cd OfflineProducer
