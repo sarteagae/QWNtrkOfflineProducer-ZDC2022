@@ -1,6 +1,7 @@
 1.- In 2023, cmssw release CMSSW_10_6_4 was used
 
    $   cmsrel CMSSW_10_6_4 
+   
    $   cd CMSSW_10_6_4/src
    
 2.- create a folder OfflineProducer  and clone this repository
