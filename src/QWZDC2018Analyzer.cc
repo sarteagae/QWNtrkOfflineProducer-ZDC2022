@@ -32,6 +32,7 @@ private:
 	bool		bTree_;
 	std::map<uint32_t, TH2D*>	hADC;
 	std::map<uint32_t, TH2D*>	hfC;
+//Saray: Addig plots for each TS
 
 	std::map<uint32_t, TH2D*>       hfC1TS;
 	std::map<uint32_t, TH2D*>       hfC2TS;
@@ -156,6 +157,7 @@ QWZDC2018Analyzer::analyze(const edm::Event& iEvent, const edm::EventSetup& iSet
 			if ( cname.find( (uint32_t)(*it) ) != cname.end() ) {
 				hADC[uint32_t(*it)] = fADC.make<TH2D>(cname[(uint32_t)(*it)].c_str(), (cname[(uint32_t)(*it)]+";TS;ADC").c_str(), 10, 0, 10, 256, 0, 256);
 				hfC[uint32_t(*it)]  = ffC. make<TH2D>(cname[(uint32_t)(*it)].c_str(), (cname[(uint32_t)(*it)]+";TS;fC").c_str(), 10, 0, 10, 3500, 0, 35000);
+//Saray: Addig plots for each TS
 
 				hfC1TS[uint32_t(*it)]  = ffC1TS. make<TH2D>(cname[(uint32_t)(*it)].c_str(), (cname[(uint32_t)(*it)]+";TS;fC").c_str(), 1, 0, 1, 3500, 0, 35000);
 				hfC2TS[uint32_t(*it)]  = ffC2TS. make<TH2D>(cname[(uint32_t)(*it)].c_str(), (cname[(uint32_t)(*it)]+";TS;fC").c_str(), 1, 1, 2, 3500, 0, 35000);
@@ -208,6 +210,7 @@ QWZDC2018Analyzer::analyze(const edm::Event& iEvent, const edm::EventSetup& iSet
 		for ( int ts = 0; ts < NS_; ts++ ) {
 			hADC[uint32_t(*it)]->Fill( ts, (*hadc)[idx] );
 			hfC [uint32_t(*it)]->Fill( ts, (*hfc) [idx] );
+//Saray: Addig plots for each TS
 
 			hfC1TS [uint32_t(*it)]->Fill( ts, (*hfc) [idx] );
 			hfC2TS [uint32_t(*it)]->Fill( ts, (*hfc) [idx] );
@@ -258,7 +261,8 @@ QWZDC2018Analyzer::endJob() {
 		for ( auto it = hfC.begin(); it != hfC.end(); it++ ) {
 			it->second->Scale(1./Nevent_);
 		}
-		
+	//Saray: Addig plots for each TS
+	
 		for ( auto it = hfC1TS.begin(); it != hfC1TS.end(); it++ ) {
                         it->second->Scale(1./Nevent_);
 		}
